@@ -8,8 +8,8 @@ const pokemonSchema = new mongoose.Schema({
     },
     name: {
         english: { type: String, required: true },
-        japanese: { type: String, required: true },
-        chinese: { type: String, required: true },
+        japanese: { type: String, required: false },
+        chinese: { type: String, required: false },
         french: { type: String, required: true },
     },
     type: {
