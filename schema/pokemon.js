@@ -8,8 +8,8 @@ const pokemonSchema = new mongoose.Schema({
     },
     name: {
         english: { type: String, required: true },
-        japanese: { type: String, required: true },
-        chinese: { type: String, required: true },
+        japanese: { type: String, required: false },
+        chinese: { type: String, required: false },
         french: { type: String, required: true },
     },
     type: {
@@ -30,5 +30,4 @@ const pokemonSchema = new mongoose.Schema({
     },
 });
 
-//  pokemon est le nom de la collection dans la base de données MongoDB. il y aura une collection nommée "pokemons"
-export default mongoose.model("pokemon", pokemonSchema);
+export default mongoose.model("Pokemon", pokemonSchema);
